@@ -1,0 +1,15 @@
+.version-escritorio, .version-movil {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .version-escritorio {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .version-movil {
+      display: block;
+    }
+  }

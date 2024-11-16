@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding-top: 15vh;
+    min-height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.nav1 .logo {
+    height: 50px;
+}
+
+.nav2 i {
+    color: white;
+}
+
+.nav1, .nav2, .nav3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+ul.menu li a:hover {
+    color: gray;
+}
+
+/* Estilos video */
+.videoFondo {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/* Estilos para contenido encima del video */
+.contenidoInicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparente */
+    color: white;
+}
+
+.contenidoSuperior {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoInferior {
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.divContenido {
+    width: 13vw;
+    height: 30vh;
+    margin: 1rem;
+    border: 2px solid darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.divContenido i {
+    margin-bottom: 0.5rem;
+    color: black;
+    font-size: 32px;
+}
+
+.divContenido p {
+    font-size: 16px;
+    color: black;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 85vh;
+    scroll-margin-top: 15vh;
+    border: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+#contacto {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mapaGoogle {
+    overflow: hidden;
+    height: 65vh;
+    width: 50vw;
+}
+
+.mapaGoogle iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.columnaDatos {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: lightblue;
+    color: white;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.datosContacto {
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.datosContacto ul {
+    padding: 0;
+    list-style: none;
+}
+
+.datosContacto .li-titulo {
+    color: darkblue;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.datosContacto .li-titulo i {
+    margin-right: 8px;
+}
+
+.datosContacto .li-texto {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.formulario {
+    width: 80%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form span {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+.formulario input, .formulario button {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+.formulario button {
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: darkblue;
+    background-color: white;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: greenyellow;
+}
+
+.contenedor-funciones, .contenedor-descargas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.funcion, .descarga {
+    box-shadow: 0 2px 8px darkblue;
+    text-align: center;
+    width: 250px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid darkblue;
+    background-color: lightblue;
+}
+
+.funcion i, .descarga i {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.descarga button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    border: none;
+    color: darkblue;
+    background-color: #9dd600;
+}
+
+.descarga button:hover {
+    background-color: goldenrod;
+}
+
+.contenedor-fondo {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 1rem;
+}
+
+.barra-busqueda {
+    max-width: 600px;
+    margin: 0 auto 2rem; /* Para separar funciones */
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10; /* Encima de todo */
+}
+
+.barra-busqueda input {
+    flex-grow: 1;
+    border: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+.barra-busqueda button {
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.barra-busqueda i {
+    font-size: 1.2rem;
+    color: darkslateblue;
+}
+
+.contenedor-funciones {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    position: relative; }
+
+    /* Estilos para el video de fondo */
+.contenedor-video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que el video quede detrás del contenido */
+    overflow: hidden;
+}
+
+.videoFondo {
+    object-fit: cover; /* Video cubre toda la pantalla */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
